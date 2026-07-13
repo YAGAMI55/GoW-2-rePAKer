@@ -1,6 +1,6 @@
 # ⚔️ GoW 2 rePAKer
 
-**Инструмент для распаковки и перепаковки игровых архивов God of War 2 (DVD5/DVD9)**
+**Инструмент для распаковки и перепаковки игровых архивов God of War 2 PS2 версии (DVD5/DVD9)**
 
 [![Go Version](https://img.shields.io/badge/Go-1.26.3-blue.svg)](https://golang.org/)
 [![Release](https://img.shields.io/github/v/release/YAGAMI55/GoW-2-rePAKer)](https://github.com/YAGAMI55/GoW-2-rePAKer/releases)
