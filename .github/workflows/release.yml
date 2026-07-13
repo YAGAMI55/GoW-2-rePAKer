@@ -3,7 +3,10 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'             # запуск при пуше тега вида v1.0.0, v2.3.4 и т.д.
+      - 'v*'
+
+permissions:
+  contents: write   # <-- вот это разрешение
 
 jobs:
   build:
@@ -15,15 +18,14 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
+          go-version: '1.23'   # замените на реальную существующую версию
 
-      - name: Build for Windows (exe)
-        run: |
-          GOOS=windows GOARCH=amd64 go build -o gow2repacker.exe main.go
+      - name: Build for Windows
+        run: GOOS=windows GOARCH=amd64 go build -o myapp.exe main.go
 
       - name: Create Release and Upload Asset
         uses: softprops/action-gh-release@v1
         with:
-          files: gow2repacker.exe
+          files: myapp.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
