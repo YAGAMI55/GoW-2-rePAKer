@@ -124,6 +124,8 @@ GOOS=darwin GOARCH=amd64 go build -o gow2repacker main.go
 
 ## 🙏 Благодарности
 Создано с ❤️ для сообщества моддеров God of War 2.
+## Спасибо mogaika за исходники и gowbrowser
+## https://github.com/mogaika/god_of_war_browser
 
 ---
 
